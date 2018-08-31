@@ -18,6 +18,21 @@ main{
     flex-direction: row;
 }
 
+.toggle{
+    color: #fff;
+    font-size: 2em;
+    background-color: #333;
+    text-align: right;
+    height: 2em;
+    padding: 0.5em;
+    display: none;
+}
+
+.active{
+    display: flex;
+
+}
+
 /* conteúdo esquerdo */
 .cont-esquerdo{
     width: 20%;
@@ -162,7 +177,6 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .cont1{
@@ -179,6 +193,7 @@ main{
     text-align: center;
     margin-top: 10%;
     border-radius: 15px;
+    padding: 1%;
 }
 
 .formacao{
@@ -199,7 +214,7 @@ main{
 }
 
 .linguagens{
-    width: 350px;
+    width: 300px;
     height: 200px;
     background-color: #4a0072;
     padding: 3%;
@@ -217,7 +232,8 @@ main{
 .linguagem h3{
     margin-top:5%;
     margin:auto;
-    width: 80%;
+    width: 55%;
+    padding: 1%;
 }
 
 
@@ -256,7 +272,7 @@ main{
 
 .cont-xp h3{
     width: 40%;
-    height: 20%;
+    height: 10%;
     background: #4a0072;
     margin: auto;
     text-align: center;
@@ -264,7 +280,7 @@ main{
     color: #fff;
     border: #000 1px solid;
     margin-bottom: 1%;
-    font-size: 20pt;
+    font-size: 18pt;
     border-radius: 15px;
 }
 
@@ -306,6 +322,14 @@ main{
         width: 65%;
     }
 
+    .container{
+        flex-wrap: wrap;
+    }
+
+    .linguagem h3{
+        width: 70%;
+    }
+
     .linguagens{
         width: 250px;
         margin:5% auto;
@@ -316,12 +340,23 @@ main{
     }
 
     .cont2 h3{
-        width: 55%;
+        width: 50%;
     }
 
     .cont-xp h3{
         width: 65%;
         height: 10%;
         font-size: 14pt;
+    }
+
+    .toggle{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .active{
+        display: flex;
+        width: 100%;
+        position: relative;
     }
 }

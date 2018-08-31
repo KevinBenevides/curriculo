@@ -29,7 +29,7 @@
                 </div>
                 <h3>Git Hub:</h3>
                 <div class="git">
-                    <a href="https://github.com/KevinBenevides"><img src="img/git.png" alt="#"></a>
+                    <a href="https://github.com/KevinBenevides" target="_blank"><img src="img/git.png" alt="#"></a>
                 </div>
             </div>
             <!--fim do cont-esquerdo-info-->
@@ -62,6 +62,9 @@
         <section class="cont-principal">
             <div class="banner">
                 <div class="topo">
+                    <div class="toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
                     <h1>Desenvolvedor de sistemas</h1>
                 </div>
             </div>
@@ -82,7 +85,7 @@
                         <ul>
                             <li>HTML</li>
                             <li>CSS</li>
-                            <li>Shel</li>
+                            <li>Shell</li>
                             <li>PHP</li>
                             <li>Java Script</li>
                         </ul>
@@ -111,6 +114,17 @@
         </section>
         <!--fim do cont-principal-->
     </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.cont-esquerdo').toggleClass('active');
+            })
+        })
+    </script>
 </body>
 
 </html>
